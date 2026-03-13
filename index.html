@@ -8,12 +8,22 @@
       name="description"
       content="Interactive resume for Nikhil Chitali, focused on backend engineering, distributed systems, and production-grade application development."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page-shell">
       <header class="hero">
         <div class="hero-copy">
+          <div class="hero-kicker">
+            <span class="signal-dot"></span>
+            <span>Available for backend engineering opportunities</span>
+          </div>
           <p class="eyebrow">Software Engineer Applications - 1A</p>
           <h1>Nikhil Chitali</h1>
           <p class="lede">
@@ -21,6 +31,14 @@
             flows, resilient REST APIs, and production support improvements
             across Java, Spring Boot, Python, GraphQL, and distributed systems.
           </p>
+          <div class="hero-stack">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>Python</span>
+            <span>GraphQL</span>
+            <span>PostgreSQL</span>
+            <span>Distributed Systems</span>
+          </div>
           <div class="hero-actions">
             <button
               class="button primary"
@@ -50,17 +68,32 @@
           </div>
         </div>
         <aside class="hero-panel">
-          <div class="stat-card">
-            <span class="stat-value">5M+</span>
-            <span class="stat-label">records processed in BPI import flow</span>
+          <div class="console-card">
+            <div class="console-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="console-body">
+              <p><span>$ role</span> backend engineer</p>
+              <p><span>$ focus</span> scalable systems + reliable APIs</p>
+              <p><span>$ impact</span> 5M records, 40% faster exports</p>
+              <p><span>$ coding</span> LeetCode Knight, 1550+ solved</p>
+            </div>
           </div>
-          <div class="stat-card">
-            <span class="stat-value">40%</span>
-            <span class="stat-label">data lake load time reduced</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-value">1550+</span>
-            <span class="stat-label">LeetCode problems solved</span>
+          <div class="stat-grid">
+            <div class="stat-card">
+              <span class="stat-value">5M+</span>
+              <span class="stat-label">records processed in BPI import flow</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">40%</span>
+              <span class="stat-label">data lake load time reduced</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">1550+</span>
+              <span class="stat-label">LeetCode problems solved</span>
+            </div>
           </div>
         </aside>
       </header>
