@@ -645,6 +645,19 @@ li + li {
   color: var(--muted);
 }
 
+.award-link {
+  color: var(--yellow);
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 8px;
+  text-shadow: 0 0 12px rgba(255, 230, 109, 0.2);
+}
+
+.award-link:hover {
+  color: #fff1a8;
+  text-decoration: underline;
+}
+
 .toast {
   position: fixed;
   left: 50%;
