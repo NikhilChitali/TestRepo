@@ -3,6 +3,9 @@ const skillCards = document.querySelectorAll(".skill-card");
 const detailGroups = document.querySelectorAll(".timeline-card");
 const copyButtons = document.querySelectorAll("[data-copy]");
 const toast = document.querySelector(".toast");
+const revealTargets = document.querySelectorAll(
+  ".section, .skill-card, .timeline-card, .panel, .stat-card, .console-card"
+);
 
 const showToast = (message) => {
   toast.textContent = message;
@@ -56,3 +59,28 @@ copyButtons.forEach((button) => {
     }
   });
 });
+
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.16,
+      rootMargin: "0px 0px -40px 0px",
+    }
+  );
+
+  revealTargets.forEach((target, index) => {
+    target.style.setProperty("--reveal-delay", `${Math.min(index * 45, 260)}ms`);
+    target.classList.add("reveal");
+    observer.observe(target);
+  });
+}
