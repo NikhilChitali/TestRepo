@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikhil Chitali | Interactive Resume</title>
+    <meta
+      name="description"
+      content="Interactive resume for Nikhil Chitali, focused on backend engineering, distributed systems, and production-grade application development."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Software Engineer Applications - 1A</p>
+          <h1>Nikhil Chitali</h1>
+          <p class="lede">
+            Backend engineer with hands-on experience shipping high-scale data
+            flows, resilient REST APIs, and production support improvements
+            across Java, Spring Boot, Python, GraphQL, and distributed systems.
+          </p>
+          <div class="hero-actions">
+            <button
+              class="button primary"
+              data-copy="nikhilchitali57@gmail.com"
+            >
+              Copy Email
+            </button>
+            <a class="button secondary" href="mailto:nikhilchitali57@gmail.com">
+              Email Me
+            </a>
+          </div>
+          <div class="contact-row">
+            <a href="mailto:nikhilchitali57@gmail.com">nikhilchitali57@gmail.com</a>
+            <span>LinkedIn available in source PDF</span>
+            <span>LeetCode highlighted below</span>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <div class="stat-card">
+            <span class="stat-value">5M+</span>
+            <span class="stat-label">records processed in BPI import flow</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">40%</span>
+            <span class="stat-label">data lake load time reduced</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">1550+</span>
+            <span class="stat-label">LeetCode problems solved</span>
+          </div>
+        </aside>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Core strengths</p>
+            <h2>Skills snapshot</h2>
+          </div>
+          <div class="filter-bar" aria-label="Skill filters">
+            <button class="filter-chip is-active" data-filter="all">All</button>
+            <button class="filter-chip" data-filter="backend">Backend</button>
+            <button class="filter-chip" data-filter="data">Data</button>
+            <button class="filter-chip" data-filter="systems">Systems</button>
+            <button class="filter-chip" data-filter="collaboration">
+              Collaboration
+            </button>
+          </div>
+          <div class="skill-grid">
+            <article class="skill-card" data-tags="backend systems">
+              <h3>Backend foundations</h3>
+              <p>Java, Spring Boot, Python, C/C++, Golang, REST APIs</p>
+            </article>
+            <article class="skill-card" data-tags="data systems">
+              <h3>Data and persistence</h3>
+              <p>PostgreSQL, Neo4j, GraphQL, CSV pipelines, Kafka</p>
+            </article>
+            <article class="skill-card" data-tags="systems">
+              <h3>Architecture</h3>
+              <p>
+                Distributed systems, performance optimization, object-oriented
+                design, production support
+              </p>
+            </article>
+            <article class="skill-card" data-tags="backend collaboration">
+              <h3>Execution</h3>
+              <p>
+                End-to-end backend ownership, rapid ramp-up, code reviews,
+                cross-team communication
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2>Impact timeline</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Ciena India Pvt. Ltd</h3>
+                  <p>Software Engineer Applications - 1A</p>
+                </div>
+                <div class="timeline-meta">
+                  <span>Jan 2023 - Present</span>
+                  <span>Remote, India</span>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span>BPI</span>
+                <span>Spring Boot</span>
+                <span>Python</span>
+                <span>GraphQL</span>
+              </div>
+              <div class="timeline-highlights">
+                <button class="detail-pill is-selected" data-detail="scale">
+                  Scale
+                </button>
+                <button class="detail-pill" data-detail="reliability">
+                  Reliability
+                </button>
+                <button class="detail-pill" data-detail="architecture">
+                  Architecture
+                </button>
+              </div>
+              <div class="detail-panel" data-panel="scale">
+                <ul>
+                  <li>
+                    Built a mass data import flow processing 5 million records
+                    into the BPI ecosystem from multiple customer files.
+                  </li>
+                  <li>
+                    Added an operational dashboard for monitoring ingestion
+                    workflows and reducing onboarding friction.
+                  </li>
+                  <li>
+                    Implemented bulk data load support for CSV-based ingestion
+                    with partial failure handling, retries, idempotency, and
+                    data consistency checks.
+                  </li>
+                </ul>
+              </div>
+              <div class="detail-panel is-hidden" data-panel="reliability">
+                <ul>
+                  <li>
+                    Investigated and resolved production incidents with support
+                    teams to restore service quickly and prevent repeat issues.
+                  </li>
+                  <li>
+                    Raised application reliability and security with dependency
+                    upgrades, hardened configurations, and static analysis
+                    fixes.
+                  </li>
+                  <li>
+                    Optimized bulk export and reporting paths, cutting data lake
+                    loading time for 4.1 million records by 40%.
+                  </li>
+                </ul>
+              </div>
+              <div class="detail-panel is-hidden" data-panel="architecture">
+                <ul>
+                  <li>
+                    Built production-grade Java and Spring Boot REST APIs within
+                    a microservices architecture handling high-volume
+                    transactional work.
+                  </li>
+                  <li>
+                    Developed Python services integrated with GraphQL queries
+                    and backing databases for predictable performance.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Josh Software Pvt. Ltd</h3>
+                  <p>Software Engineering Intern</p>
+                </div>
+                <div class="timeline-meta">
+                  <span>Feb 2021 - Aug 2021</span>
+                  <span>Pune, India</span>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span>Backend APIs</span>
+                <span>HAProxy</span>
+                <span>Hystrix</span>
+              </div>
+              <ul>
+                <li>
+                  Implemented backend APIs for asset management workflows,
+                  including CSV-based bulk ingestion and export used by internal
+                  teams.
+                </li>
+                <li>
+                  Improved service resilience with HAProxy load balancing,
+                  Hystrix-based circuit breaking, and graceful shutdown support
+                  for in-flight requests.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section two-column">
+          <article class="panel">
+            <div class="section-heading compact">
+              <p class="eyebrow">Education</p>
+              <h2>Academic foundation</h2>
+            </div>
+            <h3>Walchand College of Engineering</h3>
+            <p class="panel-meta">Sangli, India</p>
+            <p>B.Tech in Information Technology</p>
+            <p class="panel-meta">Aug 2017 - May 2021</p>
+            <p>CPI: 8.38</p>
+          </article>
+
+          <article class="panel">
+            <div class="section-heading compact">
+              <p class="eyebrow">Achievements</p>
+              <h2>Signals of growth</h2>
+            </div>
+            <ul>
+              <li>
+                Awarded for ramping onto a new team within a week and delivering
+                production-ready backend features while working with an
+                unfamiliar technology stack.
+              </li>
+              <li>
+                Achieved LeetCode Knight and solved 1550+ problems.
+              </li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
